@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+      <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!--------------------------------------------------------------------->
+<style>
+
+  .fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 10px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  width: 2.6%
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  width: 2.6%
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+  width: 2.6%
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+  width: 2.6%
+}
+
+
+
+  .footer {
+   position: static;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+
+  video {
+  width: 100%;
+  height: auto;
+}
+
+#more {display: none;}
+#more2 {display: none;}
+#more3 {display: none;}
+#more4 {display: none;}
+/* Style inputs with type="text", select elements and textareas */
+  input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #fa163f;
+    color: red;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #fa163f;
+  }
+
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #3c3d47;
+    padding: 20px;
+  }
+
+  p
+  {
+    color: white;
+  }
+  
+  h5
+  {
+    color: white;
+  }
+
+  label
+  {
+    color: white;
+  }
+  h6
+  {
+    color: white;
+    font-size: 36px;
+  }
+
+  body {font-family: Arial, Helvetica, sans-serif;}
+
+
+
+.container {
+  padding: 20px;
+  background-color: #3c3d47;
+}
+
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+input[type=submit] {
+  background-color: #fa163f;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+
+</style>
+
+<script>
+  function myFunction1() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+
+  function myFunction2() {
+  var dots = document.getElementById("dots2");
+  var moreText = document.getElementById("more2");
+  var btnText = document.getElementById("myBtn2");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+
+  function myFunction3() {
+  var dots = document.getElementById("dots3");
+  var moreText = document.getElementById("more3");
+  var btnText = document.getElementById("myBtn3");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+
+  function myFunction4() {
+  var dots = document.getElementById("dots4");
+  var moreText = document.getElementById("more4");
+  var btnText = document.getElementById("myBtn4");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+
+</script>
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+
+  <a class="navbar-brand" href="code_basic2.html">HandSculp</a>
+      
+  <ul class="navbar-nav ml-auto">
+
+    <li class="nav-item">
+      <a class="nav-link" href="code_basic2.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="gallery.html">Gallery</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="about.html">About us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="contactus.html">Contact us</a>
+    </li>
+  </ul>
+  <form class="form-inline" action="/action_page.php">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+    <button class="btn btn-danger" type="submit">Search</button>
+  </form>
+</nav>
+
+
+<!-- gallery code -->
+
+<section>
+  <br>
+  <h1 style="text-align: center;">Gallery</h1>
+  <br>
+  <div class="container">
+    <!-- row 1 -->
+    <div class="row">
+      <!-- column -->
+      <div class="col">
+        <img src="E:\Webdesign\Photos\A2.jpg" width="510">
+        <h5>Logo 3D instagram</h5>
+        <p>Instagram was originally distinguished by only allowing content to be framed in a square (1:1) aspect ratio with 640 pixels to match the display width of the iPhone at the time. In 2015, these restrictions were eased with an increase to 1080 pixels.<span id="dots">...</span><span id="more"> The service also added messaging features, the ability to include multiple images or videos in a single post, and a Stories feature—similar to its main opposition Snapchat—which allows users to post photos and videos to a sequential feed, with each post accessible by others for 24 hours each. As of January 2019, the Stories feature is used by 500 million users daily.</span></p>
+        <button onclick="myFunction1()" id="myBtn" class="btn btn-danger">Read more</button>
+      </div>
+
+      <div class="col">
+        <img src="E:\Webdesign\Photos\A3.jpg" width="510">
+        <h5>Logo 3D twitter</h5>
+        <p>Twitter was created by Jack Dorsey, Noah Glass, Biz Stone, and Evan Williams in March 2006 and launched in July of that year. By 2012, more than 100 million users posted 340 million tweets a day, and the service handled an average of 1.6 billion search queries per day.<span id="dots2">...</span><span id="more2"> In 2013, it was one of the ten most-visited websites and has been described as "the SMS of the Internet". As of Q1 2019, Twitter had more than 330 million monthly active users.[10] Twitter is a some-to-many microblogging service, given that the vast majority of tweets are written by a small minority of users.</span></p>
+        <button onclick="myFunction2()" id="myBtn2" class="btn btn-danger">Read more</button>
+      </div>
+    </div>
+
+    <br>
+    
+    <div class="row">
+      <div class="col">
+        <img src="E:\Webdesign\Photos\A4.jpg" width="510">
+        <h5>Logo 3D tesla</h5>
+        <p>Model S cars built from October 2014 have a feature called Autopilot, an advanced driver assistance system that allows the car to operate without assistance from the driver. However, the driver must supervise continuously and take control if there is an issue.<span id="dots3">...</span><span id="more3"> Autopilot 2.0, introduced in October 2016, also includes “Enhanced Summon”, which allows the car to navigate through a parking lot to its owner without anyone in the driver's seat. Sentry mode, available on cars built after August 2017, senses and records suspicious activity around the car.</span></p>
+        <button onclick="myFunction3()" id="myBtn3" class="btn btn-danger">Read more</button>
+      </div>
+
+      <div class="col">
+        <img src="E:\Webdesign\Photos\A5.jpg" width="510">
+        <h5>Logo 3D discord</h5>
+        <p>According to Citron, during the development process, he noticed how difficult it was for his team to work out tactics in games like Final Fantasy XIV and League of Legends using available voice over IP (VoIP) software. This led developers to develop a chat service<span id="dots4">...</span><span id="more4"> with a focus on user friendliness with minimal impact to performance.
+
+        To develop Discord, Hammer & Chisel gained additional funding from YouWeb's 9+ incubator, which had also funded the startup of Hammer & Chisel, and from Benchmark capital and Tencent.</span></p>
+        <button onclick="myFunction4()" id="myBtn4" class="btn btn-danger">Read more</button>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+</section>
